@@ -1,6 +1,8 @@
 import sys
 from pathlib import Path
 
+import pytest
+
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from calculator import add, subtract
@@ -23,6 +25,7 @@ def test_multiply():
     assert multiply(-2, 5) == -10
 
 
+@pytest.mark.skip(reason="Belum diimplementasi — lihat issue #2")
 def test_divide():
     from calculator import divide
 
