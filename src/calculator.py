@@ -9,4 +9,8 @@ def subtract(a, b):
     return a - b
 
 
-# TODO: implement multiply, divide (raise on zero)
+def multiply(a, b):
+    return a * b
+
+
+# TODO: implement divide (raise on zero) — lihat issue #2
