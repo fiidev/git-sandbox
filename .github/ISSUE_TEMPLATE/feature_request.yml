@@ -1,0 +1,33 @@
+name: Feature Request
+description: Usulkan fitur baru untuk calculator
+title: "feat: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Usulkan fitur baru. Fitur ini bisa jadi latihan PR berikutnya!
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Masalah / kebutuhan
+      description: Fitur apa yang dibutuhkan dan kenapa?
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solusi yang diusulkan
+      description: Bagaimana fitur ini seharusnya bekerja?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatif
+      description: Pendekatan lain yang pernah kamu pertimbangkan?
+    validations:
+      required: false

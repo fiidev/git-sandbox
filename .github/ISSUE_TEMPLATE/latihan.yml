@@ -1,0 +1,41 @@
+name: Latihan
+description: Checklist latihan workflow GitHub
+title: "latihan: "
+labels: ["latihan"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Issue latihan pribadi. Lihat panduan di [docs/latihan/](https://github.com/fiidev/git-sandbox/tree/main/docs/latihan/).
+
+  - type: dropdown
+    id: latihan-type
+    attributes:
+      label: Jenis latihan
+      options:
+        - Issue pertama (latihan-01)
+        - PR pertama (latihan-02)
+        - Konflik merge (latihan-03)
+        - Latihan bebas
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: Sudah baca panduan di docs/latihan/
+          required: true
+        - label: Sudah buat branch terpisah (bukan langsung ke main)
+          required: false
+        - label: Sudah jalankan test lokal sebelum PR
+          required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Catatan
+      description: Apa yang sudah/sedang/belum dikerjakan?
+    validations:
+      required: false
